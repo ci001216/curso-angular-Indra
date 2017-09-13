@@ -1,0 +1,13 @@
+<div >
+  <form name="Pensamientos">
+      <label for="idea" >Indica una idea</label>
+      <input type="text" name = "idea" id="idea" [(ngModel)]="idea">
+      <button (click)= "addIdea()">Añadir</button>
+  </form>
+  
+  <H3>Pensamientos que has tenido</H3>
+
+  <ul>
+    <li *ngFor="let idea of aIdeas">{{idea}}</li>
+  </ul>
+</div>
