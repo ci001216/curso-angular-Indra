@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CommonsModule } from './commons/commons.module';
 import { FormularioComponent } from './formulario/formulario.component';
 import { IdeasComponent } from './ideas/ideas.component';
+import { NoticiaComponent } from './noticia/noticia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    IdeasComponent
+    IdeasComponent,
+    NoticiaComponent
   ],
   imports: [
     BrowserModule,
