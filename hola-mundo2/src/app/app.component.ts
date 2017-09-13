@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PieComponent } from './pie/pie.component';
 
 @Component({
   selector: 'app-root',
