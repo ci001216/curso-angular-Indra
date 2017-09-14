@@ -8,6 +8,10 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { IdeasComponent } from './ideas/ideas.component';
 import { NoticiaComponent } from './noticia/noticia.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
+import { ListaCompraComponent } from './lista-compra/lista-compra.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { SeleccionComponent } from './seleccion/seleccion.component';
     FormularioComponent,
     IdeasComponent,
     NoticiaComponent,
-    SeleccionComponent
+    SeleccionComponent,
+    PadreComponent,
+    HijoComponent,
+    ListaCompraComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

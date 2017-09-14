@@ -1,0 +1,12 @@
+<h1>A Check List</h1>
+
+<div >
+  <ul>
+    <li *ngFor="let tarea of aTareas">{{tarea}}</li>
+  </ul>
+</div>
+
+<form name="lista">
+  <input type="text" name = "tarea" id="tarea" [(ngModel)]="tarea">
+  <button (click)= "addTarea()">Add</button>
+</form>
