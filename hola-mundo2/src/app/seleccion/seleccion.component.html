@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h2>FORMULARIO - Selecciones</h2>
+
+  <h3>Selección de Opciones</h3>
+
+  <div>
+    <label>Imprimir resultado</label> <input type="checkbox" [(ngModel)]= "imprimir">
+    <br /><br />
+  </div>
+
+  Provincia 
+  <select [(ngModel)]= "provinciaSeleccionada">
+    <option *ngFor= "let provincia of provincias"
+        [ngValue]="provincia"> {{provincia.nombre}}
+    </option>
+  </select>
+  <br /><br />
+  
+</div>
+
+<p>Opcion print seleccionada {{imprimir}}</p>
+<p>Provincia Seleccionada {{provinciaSeleccionada.idProvincia}} - {{provinciaSeleccionada.nombre}}</p>
+
