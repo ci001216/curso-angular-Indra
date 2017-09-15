@@ -12,6 +12,8 @@ import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { ListaCompraComponent } from './lista-compra/lista-compra.component';
 import { ItemComponent } from './item/item.component';
+import { LibrosComponent } from './libros/libros.component';
+import { BooksService } from './books/books.service';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,15 @@ import { ItemComponent } from './item/item.component';
     PadreComponent,
     HijoComponent,
     ListaCompraComponent,
-    ItemComponent
+    ItemComponent,
+    LibrosComponent
   ],
   imports: [
     BrowserModule,
     CommonsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
